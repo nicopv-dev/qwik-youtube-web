@@ -13,7 +13,7 @@ export default component$(() => {
     <div class="container w-full">
       <div class="flex gap-4">
         {/* videos */}
-        <div class="bg-background flex w-full flex-col gap-4 rounded-md p-6">
+        <div class="flex w-full flex-col gap-4 rounded-md bg-background p-6">
           <h3 class="text-gray-300">BASED ON WHAT YOU LIKE</h3>
 
           <div class="grid grid-cols-4 gap-4">
@@ -25,7 +25,7 @@ export default component$(() => {
 
         {/* especific content */}
         <div class="w-1/3">
-          <div class="bg-background rounded-md pt-6">
+          <div class="rounded-md bg-background pt-6">
             <div class="px-6">
               <h3 class="text-gray-300">WHERE YOUR LEFT</h3>
             </div>
@@ -34,6 +34,8 @@ export default component$(() => {
               <img
                 src="https://marketplace.canva.com/EAFjv-5HJds/1/0/1600w/canva-miniatura-youtube-influencer-morado-y4LHM995xbc.jpg"
                 alt="thumbnail"
+                width={100}
+                height={40}
                 class="aspect-video w-full rounded-md object-cover"
               />
               <div class="flex flex-col items-center gap-2">
@@ -43,16 +45,16 @@ export default component$(() => {
 
               <div class="flex items-center gap-2">
                 <span class="text-xs text-gray-300">2:34</span>
-                <div class="bg-primary h-[2px] w-full rounded-md" />
+                <div class="h-[2px] w-full rounded-md bg-primary" />
                 <span class="text-xs text-gray-300">3:25</span>
               </div>
             </div>
 
-            <div class="bg-primary flex h-20 items-center justify-center gap-5 rounded-md">
+            <div class="flex h-20 items-center justify-center gap-5 rounded-md bg-primary">
               <button>
                 <TbPlayerTrackPrevFilled />
               </button>
-              <button class="text-primary rounded-md bg-white p-2">
+              <button class="rounded-md bg-white p-2 text-primary">
                 <TbPlayerPlay />
               </button>
               <button>

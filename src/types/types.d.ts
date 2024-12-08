@@ -1,10 +1,4 @@
-import {
-  type JSX,
-  SVGProps,
-  type JSXNode,
-  JSXOutput,
-  QRL,
-} from "@builder.io/qwik";
+import { SVGProps, type JSXNode, QRL } from "@builder.io/qwik";
 
 type IconType = (props: SVGProps<SVGSVGElement>) => JSXNode<unknown>;
 

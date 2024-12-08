@@ -1,10 +1,10 @@
-import { $, component$ } from "@builder.io/qwik";
+import { QRL, component$ } from "@builder.io/qwik";
 import { cn } from "~/utils/methods";
 
 interface Props {
   text: string;
   isSelected: boolean;
-  toogleCategory: (category: string) => void;
+  toogleCategory: QRL<(category: string) => void>;
 }
 
 export default component$<Props>(({ text, isSelected, toogleCategory }) => {
